@@ -1,0 +1,41 @@
+[project]
+name = "timetabling-milp"
+version = "0.1.0"
+description = "Versión alternativa del MVP de timetabling: la misma formulación en Pyomo y PuLP, comparada con CP-SAT"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "academic-timetabling-demo",
+    "highspy",
+    "ortools",
+    "pulp[cbc]",
+    "pyomo",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.uv.sources]
+# El MVP original es un submódulo de git fijado a un commit: aporta datos, prefiltro SQL,
+# modelo CP-SAT de referencia, heurística voraz y auditor. Este repositorio no lo modifica.
+# Va como ruta editable, y no como dependencia por URL, porque el original lee `schema.sql`
+# desde la raíz de su repositorio, fuera del paquete: instalado como wheel no lo encuentra.
+academic-timetabling-demo = { path = "vendor/academic-timetabling-demo", editable = true }
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = ["vendor"]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

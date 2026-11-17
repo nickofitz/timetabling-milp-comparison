@@ -1,0 +1,3 @@
+[submodule "vendor/academic-timetabling-demo"]
+	path = vendor/academic-timetabling-demo
+	url = https://github.com/nickofitz/academic-timetabling-demo.git

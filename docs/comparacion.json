@@ -1,0 +1,512 @@
+[
+  {
+    "case": "micro",
+    "seed": 0,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "sections": 3,
+    "variables": 5,
+    "conflict_constraints": 4,
+    "compactness_lines": 1,
+    "lp_base": 3.0,
+    "lp_compact": 3.0,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "COMPLETE",
+        "value": 3,
+        "bound": null,
+        "gap": null,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.0001329179995082086,
+        "placed": "3/3"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": 3.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.0010259339996991912,
+        "solve_seconds": 0.005942002000665525
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": 3.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.0014553770006386912,
+        "solve_seconds": 0.007203415999356366
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": 3.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.000400095999793848,
+        "solve_seconds": 0.001306928000303742
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": null,
+        "gap": null,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.00028923900026711635,
+        "solve_seconds": 0.019671601000482042
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": 3.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.000524007999956666,
+        "solve_seconds": 0.0009384000004502013
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 3,
+        "bound": 3.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 3,
+        "build_seconds": 0.0012406939995344146,
+        "solve_seconds": 0.0056601170008434565
+      }
+    ],
+    "threads": 1
+  },
+  {
+    "case": "demo",
+    "seed": 42,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "sections": 12,
+    "variables": 125,
+    "conflict_constraints": 836,
+    "compactness_lines": 78,
+    "lp_base": 17.0,
+    "lp_compact": 17.0,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "COMPLETE",
+        "value": 21,
+        "bound": null,
+        "gap": null,
+        "audit": "PASSED",
+        "windows": 80,
+        "cost": 21,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.003126200999759021,
+        "placed": "12/12"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 34,
+        "cost": 17,
+        "build_seconds": 0.0037303669996617828,
+        "solve_seconds": 0.004426796999723592
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 56,
+        "cost": 17,
+        "build_seconds": 0.00351922400022886,
+        "solve_seconds": 0.02419311399989965
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 56,
+        "cost": 17,
+        "build_seconds": 0.005663925000590098,
+        "solve_seconds": 0.014381983999555814
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 8,
+        "cost": 17,
+        "build_seconds": 0.006331098999908136,
+        "solve_seconds": 0.043635185999846726
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 17,
+        "build_seconds": 0.008363349000319431,
+        "solve_seconds": 0.042952171999786515
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 17,
+        "bound": 17.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 0,
+        "cost": 17,
+        "build_seconds": 0.011759772999539564,
+        "solve_seconds": 0.11405005100004928
+      }
+    ],
+    "threads": 1
+  },
+  {
+    "case": "small",
+    "seed": 1,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "sections": 30,
+    "variables": 318,
+    "conflict_constraints": 528,
+    "compactness_lines": 30,
+    "lp_base": 204.85714285714283,
+    "lp_compact": 299.89426637721874,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "INCOMPLETE",
+        "value": null,
+        "bound": null,
+        "gap": null,
+        "audit": null,
+        "windows": null,
+        "cost": null,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.003033708000657498,
+        "placed": "2/30"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 242,
+        "bound": 242.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 44,
+        "cost": 242,
+        "build_seconds": 0.004066133999913291,
+        "solve_seconds": 0.12430730199957907
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 242,
+        "bound": 241.99999999999636,
+        "gap": 1.5032970277238484e-14,
+        "audit": "PASSED",
+        "windows": 32,
+        "cost": 242,
+        "build_seconds": 0.0032840349995240103,
+        "solve_seconds": 1.0700325960006012
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "OPTIMAL",
+        "value": 242,
+        "bound": 241.99999999999636,
+        "gap": 1.5032970277238484e-14,
+        "audit": "PASSED",
+        "windows": 32,
+        "cost": 242,
+        "build_seconds": 0.0034116130000256817,
+        "solve_seconds": 1.0622399470003074
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "OPTIMAL",
+        "value": 242,
+        "bound": 242.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 32,
+        "cost": 242,
+        "build_seconds": 0.0035296530004416127,
+        "solve_seconds": 0.40025706500000524
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 387,
+        "bound": 387.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 27,
+        "cost": 252,
+        "build_seconds": 0.0066139059999841265,
+        "solve_seconds": 2.688296647000243
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 387,
+        "bound": 386.9999999999905,
+        "gap": 2.4529330619521806e-14,
+        "audit": "PASSED",
+        "windows": 27,
+        "cost": 252,
+        "build_seconds": 0.00733359800051403,
+        "solve_seconds": 7.187621502999718
+      }
+    ],
+    "threads": 1
+  },
+  {
+    "case": "medium",
+    "seed": 1,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "sections": 80,
+    "variables": 1697,
+    "conflict_constraints": 1288,
+    "compactness_lines": 70,
+    "lp_base": 506.6218028052805,
+    "lp_compact": 682.0353317330088,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "INCOMPLETE",
+        "value": null,
+        "bound": null,
+        "gap": null,
+        "audit": null,
+        "windows": null,
+        "cost": null,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.0128934880003726,
+        "placed": "9/80"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "FEASIBLE",
+        "value": 786,
+        "bound": 303.0,
+        "gap": 0.6145038167938931,
+        "audit": "PASSED",
+        "windows": 80,
+        "cost": 786,
+        "build_seconds": 0.016229701000156638,
+        "solve_seconds": 20.001592513000105
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 734,
+        "bound": 733.9999999999999,
+        "gap": 1.5488669989320984e-16,
+        "audit": "PASSED",
+        "windows": 97,
+        "cost": 734,
+        "build_seconds": 0.012272159000531246,
+        "solve_seconds": 6.887393372999213
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "OPTIMAL",
+        "value": 734,
+        "bound": 733.9999999999999,
+        "gap": 1.5488669989320984e-16,
+        "audit": "PASSED",
+        "windows": 97,
+        "cost": 734,
+        "build_seconds": 0.0128422829993724,
+        "solve_seconds": 6.866927625000244
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "FEASIBLE",
+        "value": 734,
+        "bound": 576.70392,
+        "gap": 0.21429983651226153,
+        "audit": "PASSED",
+        "windows": 94,
+        "cost": 734,
+        "build_seconds": 0.014284994000263396,
+        "solve_seconds": 20.060121704000267
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "FEASIBLE",
+        "value": 1301,
+        "bound": 306.0,
+        "gap": 0.7647963105303612,
+        "audit": "PASSED",
+        "windows": 74,
+        "cost": 931,
+        "build_seconds": 0.026111932000276283,
+        "solve_seconds": 20.003534205000506
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "FEASIBLE",
+        "value": 1171,
+        "bound": 855.9204000559589,
+        "gap": 0.26906883001199067,
+        "audit": "PASSED",
+        "windows": 62,
+        "cost": 861,
+        "build_seconds": 0.031910949000121036,
+        "solve_seconds": 20.117599913999584
+      }
+    ],
+    "threads": 1
+  },
+  {
+    "case": "large",
+    "seed": 1,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "sections": 200,
+    "variables": 9236,
+    "conflict_constraints": 3467,
+    "compactness_lines": 170,
+    "lp_base": 725.7421875,
+    "lp_compact": 1278.9397483596865,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "INCOMPLETE",
+        "value": null,
+        "bound": null,
+        "gap": null,
+        "audit": null,
+        "windows": null,
+        "cost": null,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.1285835179996866,
+        "placed": "46/200"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "FEASIBLE",
+        "value": 2798,
+        "bound": 300.0,
+        "gap": 0.8927805575411007,
+        "audit": "PASSED",
+        "windows": 214,
+        "cost": 2798,
+        "build_seconds": 0.09691533700060972,
+        "solve_seconds": 20.006255870000132
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "FEASIBLE",
+        "value": 788,
+        "bound": 776.0,
+        "gap": 0.015228426395939087,
+        "audit": "PASSED",
+        "windows": 243,
+        "cost": 788,
+        "build_seconds": 0.1338585769999554,
+        "solve_seconds": 20.16088651500013
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "FEASIBLE",
+        "value": 788,
+        "bound": 776.0,
+        "gap": 0.015228426395939087,
+        "audit": "PASSED",
+        "windows": 243,
+        "cost": 788,
+        "build_seconds": 0.06917287699980079,
+        "solve_seconds": 20.062962066999717
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "FEASIBLE",
+        "value": 806,
+        "bound": 757.60779,
+        "gap": 0.0600399627791563,
+        "audit": "PASSED",
+        "windows": 251,
+        "cost": 806,
+        "build_seconds": 0.058829134999541566,
+        "solve_seconds": 20.309525484000005
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "FEASIBLE",
+        "value": 4596,
+        "bound": 300.0,
+        "gap": 0.9347258485639687,
+        "audit": "PASSED",
+        "windows": 233,
+        "cost": 3431,
+        "build_seconds": 0.08803371599969978,
+        "solve_seconds": 20.0033915490003
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "FEASIBLE",
+        "value": 1992,
+        "bound": 1397.66947564131,
+        "gap": 0.2983586969672138,
+        "audit": "PASSED",
+        "windows": 197,
+        "cost": 1007,
+        "build_seconds": 0.10567599099977087,
+        "solve_seconds": 20.887690409000243
+      }
+    ],
+    "threads": 1
+  }
+]

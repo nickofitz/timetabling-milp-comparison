@@ -1,0 +1,104 @@
+[
+  {
+    "case": "medium",
+    "seed": 1,
+    "time_limit": 20.0,
+    "gamma": 5,
+    "threads": 8,
+    "sections": 80,
+    "variables": 1697,
+    "conflict_constraints": 1288,
+    "compactness_lines": 70,
+    "lp_base": 506.6218028052805,
+    "lp_compact": 682.0353317330088,
+    "base": [
+      {
+        "backend": "voraz",
+        "status": "INCOMPLETE",
+        "value": null,
+        "bound": null,
+        "gap": null,
+        "audit": null,
+        "windows": null,
+        "cost": null,
+        "build_seconds": 0.0,
+        "solve_seconds": 0.013096376999783388,
+        "placed": "9/80"
+      },
+      {
+        "backend": "cp-sat",
+        "status": "OPTIMAL",
+        "value": 734,
+        "bound": 734.0,
+        "gap": 0.0,
+        "audit": "PASSED",
+        "windows": 90,
+        "cost": 734,
+        "build_seconds": 0.01676850599960744,
+        "solve_seconds": 7.7374675979999665
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "OPTIMAL",
+        "value": 734,
+        "bound": 733.9999999999999,
+        "gap": 1.5488669989320984e-16,
+        "audit": "PASSED",
+        "windows": 97,
+        "cost": 734,
+        "build_seconds": 0.015068765000251005,
+        "solve_seconds": 8.605884847000198
+      },
+      {
+        "backend": "pulp+highs",
+        "status": "OPTIMAL",
+        "value": 734,
+        "bound": 733.9999999999999,
+        "gap": 1.5488669989320984e-16,
+        "audit": "PASSED",
+        "windows": 97,
+        "cost": 734,
+        "build_seconds": 0.011998028000562044,
+        "solve_seconds": 8.707626159999563
+      },
+      {
+        "backend": "pulp+cbc",
+        "status": "FEASIBLE",
+        "value": 734,
+        "bound": 576.70392,
+        "gap": 0.21429983651226153,
+        "audit": "PASSED",
+        "windows": 90,
+        "cost": 734,
+        "build_seconds": 0.022093186999882164,
+        "solve_seconds": 20.070079670999803
+      }
+    ],
+    "compact": [
+      {
+        "backend": "cp-sat",
+        "status": "FEASIBLE",
+        "value": 1121,
+        "bound": 883.0,
+        "gap": 0.21231043710972347,
+        "audit": "PASSED",
+        "windows": 66,
+        "cost": 791,
+        "build_seconds": 0.018325258999539074,
+        "solve_seconds": 20.010240383000564
+      },
+      {
+        "backend": "pyomo+highs",
+        "status": "FEASIBLE",
+        "value": 1121,
+        "bound": 874.8540326940608,
+        "gap": 0.21957713408201532,
+        "audit": "PASSED",
+        "windows": 56,
+        "cost": 841,
+        "build_seconds": 0.08111515200016584,
+        "solve_seconds": 20.383774398999776
+      }
+    ]
+  }
+]
